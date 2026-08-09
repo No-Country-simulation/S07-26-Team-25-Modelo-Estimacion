@@ -1,0 +1,5 @@
+fuente,ano,tecnologia_cooling,pue_ref_min,pue_ref_mid,pue_ref_max,stranded_pct_min,stranded_pct_mid,stranded_pct_max,tarifa_electrica_usd_kwh,colocation_usd_kw_mes,capex_usd_per_mw,ccf_typical,ahorro_energia_nodo_pct
+Microsoft GFS (Sankar & Vaid),2010,air-cooled,1.50,1.58,1.65,12.0,12.5,13.0,0.12,184.0,11000000.0,3.9,0.0
+Supermicro Liquid Cooling Report,2025,liquid-cooled,1.05,1.08,1.12,2.0,3.5,5.0,0.12,184.0,17500000.0,1.2,16.0
+Industry & EIA Hybrid Benchmarks,2026,hybrid,1.20,1.25,1.30,8.0,9.0,10.0,0.12,184.0,13500000.0,1.8,8.0
+Uptime Institute Global Survey,2024,air-cooled,1.52,1.58,1.68,11.5,12.5,13.5,0.12,184.0,11000000.0,3.9,0.0

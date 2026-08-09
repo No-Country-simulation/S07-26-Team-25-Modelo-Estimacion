@@ -1,0 +1,6 @@
+source_id,organization,report_name,parameter_type,min_value,max_value,unit,methodology_note
+MSFT-10,Microsoft GFS,Stranded Power Problem,max_power_overprovisioning,0.13,0.13,ratio,Sobre-provisión comparando Max-Power vs Trace-Driven en almacenamiento.
+SMCI-25,Supermicro,Air vs Liquid Cooled GPUs,fan_power_savings,0.16,0.16,ratio,Ahorro a nivel de nodo en configuraciones 8-GPU al eliminar IT-fan power.
+SMCI-25,Supermicro,Air vs Liquid Cooled GPUs,gpu_temp_liquid,46.0,54.0,celsius,Rango térmico habilitador para optimización DVFS en refrigeración líquida.
+NLYT-25,Nlyte Software,Rack Power Costs,energy_cost_high_region,207934.0,207934.0,USD,Costo anual en racks de 60kW en regiones de alto costo ($0.2496/kWh).
+COLO-26,Mercado Colocation,Data Center Guide 2026,colocation_ceiling_rate,184.0,184.0,USD/kW/mo,Tasa de mercado utilizada como límite superior o techo financiero.

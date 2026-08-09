@@ -1,0 +1,43 @@
+Épica 1: Datos y Curaduría (Data Engineering)
+
+Task: Crear repositorio oficial en GitHub y configurar estructura de carpetas.
+
+Task: Consolidar el archivo benchmarks_reales.csv con los datos curados de los PDFs.
+
+Task: Ajustar y ejecutar el script generate_dataset.py para crear el dataset sintético de 5,000 instalaciones.
+
+Task: Documentar la metodología de extracción de datos (para cumplir el entregable de auditoría).
+
+Épica 2: Análisis y Modelado Estadístico (Data Science)
+
+Task: Crear Jupyter Notebook (EDA.ipynb) para Análisis Exploratorio de Datos.
+
+Task: Generar gráficos de distribución (campanas de Gauss) para PUE y Tarifas Eléctricas en el Notebook.
+
+Task: Desarrollar la lógica de la Simulación de Monte Carlo en Python (cálculo de P10, P50, P90 para las pérdidas).
+
+Task: Crear script para el Análisis de Sensibilidad (identificar qué variable impacta más).
+
+Épica 3: Desarrollo del Backend (FastAPI)
+
+Task: Refactorizar stranded_calculator.py para reemplazar los rangos estáticos por las simulaciones estadísticas (Monte Carlo).
+
+Task: Definir el nuevo esquema JSON de respuesta (incluyendo percentiles de confianza).
+
+Task: Documentar los endpoints de la API (Swagger autogenerado).
+
+Épica 4: Desarrollo del Frontend (Streamlit)
+
+Task: Actualizar app.py para parsear el nuevo JSON estadístico de la API.
+
+Task: Integrar un gráfico interactivo de distribución (histograma de pérdidas) en la interfaz.
+
+Task: Integrar el Gráfico de Tornado (Análisis de Sensibilidad) en una nueva pestaña del dashboard.
+
+Épica 5: Entregables Finales y Presentación
+
+Task: Redactar la versión final del "Documento de Supuestos" en formato limpio para publicación.
+
+Task: Preparar las diapositivas de la presentación corporativa (usando la estructura de NotebookLM).
+
+Task: Grabar video demo o ensayo general de la presentación (pitch).

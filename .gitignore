@@ -1,0 +1,31 @@
+# Python & Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+*.py[cod]
+*$py.class
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# uv & tooling
+.uv/
+uv.lock
+.python-version
+pyproject.toml
+pyrightconfig.json
+
+# Verification scripts
+verify_all_entregable*.py

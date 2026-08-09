@@ -1,0 +1,24 @@
+# Dependencias del Proyecto - Modelo de Estimación de Stranded Capacity
+# No Country Project
+
+# Framework y Modelado de Datos
+pydantic>=2.0.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+
+# Análisis de Datos y Computación Numérica
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualización de Datos
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Entornos Interactivos Notebook
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Dashboard y Frontend
+streamlit>=1.25.0
+requests>=2.31.0
+fpdf2>=2.7.4
