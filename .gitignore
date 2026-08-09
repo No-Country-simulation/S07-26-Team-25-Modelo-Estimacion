@@ -29,3 +29,6 @@ pyrightconfig.json
 
 # Verification scripts
 verify_all_entregable*.py
+
+# Internal / initial research
+investigacion_inicial/
