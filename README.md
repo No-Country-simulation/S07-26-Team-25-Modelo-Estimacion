@@ -75,6 +75,7 @@ Entregables/
 | 4 | Análisis de sensibilidad (Tornado Chart / Variables clave) |  Completado | [`04_analisis_sensibilidad/`](04_analisis_sensibilidad/) |
 | 5 | Documento de supuestos auditable para publicación |  Completado | [`05_documento_supuestos/`](05_documento_supuestos/) |
 | 6 | API (FastAPI) y backend para el frontend de la calculadora | ⏳ Pendiente | `06_api_backend/` |
+| 7 | Dashboard interactivo en Streamlit |  Completado | [`app.py`](app.py) |
 
 ---
 
@@ -104,6 +105,11 @@ pip install -r requirements.txt
 ```
 
 ### 3. Ejecutar el Proyecto / Pruebas
+
+**Ejecutar la Calculadora y Dashboard en Streamlit:**
+```bash
+streamlit run app.py
+```
 
 **Ejecutar suite de pruebas unitarias:**
 ```bash
