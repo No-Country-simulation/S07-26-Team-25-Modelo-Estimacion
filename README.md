@@ -74,8 +74,8 @@ Entregables/
 | 3 | Lógica de rangos (Límites Floor & Ceiling) |  Completado | [`03_logica_rangos/`](03_logica_rangos/) |
 | 4 | Análisis de sensibilidad (Tornado Chart / Variables clave) |  Completado | [`04_analisis_sensibilidad/`](04_analisis_sensibilidad/) |
 | 5 | Documento de supuestos auditable para publicación |  Completado | [`05_documento_supuestos/`](05_documento_supuestos/) |
-| 6 | API (FastAPI) y backend para el frontend de la calculadora | ⏳ Pendiente | `06_api_backend/` |
-| 7 | Dashboard interactivo en Streamlit |  Completado | [`app.py`](app.py) |
+| 6 | API (FastAPI) y backend para el frontend de la calculadora |  Completado | [`06_api_backend/`](06_api_backend/) |
+| 7 | Dashboard interactivo en Streamlit |  Completado | [`app/app.py`](app/app.py) |
 
 ---
 
@@ -83,37 +83,31 @@ Entregables/
 
 ### Prerrequisitos
 - Python 3.9+
-- Jupyter Notebook / JupyterLab (opcional, para visualizar notebooks)
 
-### 1. Crear y Activar Entorno Virtual (`venv`)
-
-**En Windows (PowerShell):**
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+### 1. Sincronizar Entorno con `uv`
+```bash
+uv sync
 ```
 
-**En Linux / macOS:**
+### 2. Ejecutar la API Backend (FastAPI)
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+uv run uvicorn 06_api_backend.main:app --reload --port 8000
 ```
+*Documentación interactiva disponible en [http://localhost:8000/docs](http://localhost:8000/docs)*
 
-### 2. Instalar Dependencias
+### 3. Ejecutar la Calculadora y Dashboard en Streamlit
 ```bash
-pip install -r requirements.txt
+uv run streamlit run app/app.py
 ```
+*(O `streamlit run app/app.py` con el entorno activado)*
 
-### 3. Ejecutar el Proyecto / Pruebas
-
-**Ejecutar la Calculadora y Dashboard en Streamlit:**
+### 4. Pruebas Unitarias
 ```bash
-streamlit run app.py
-```
+# Pruebas del motor matemático
+uv run python test_stranded_model.py
 
-**Ejecutar suite de pruebas unitarias:**
-```bash
-python test_stranded_model.py
+# Pruebas del backend FastAPI
+uv run python 06_api_backend/test_api.py
 ```
 
 **Ejecutar el Jupyter Notebook interactivo:**
